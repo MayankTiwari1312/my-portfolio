@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mayank's Portfolio (aka my little internet corner)</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #0f172a;
+        color: #f8fafc;
+        margin: 0;
+      }
+
+      /* NAVBAR STUFF */
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 97%;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 32px;
+        background-color: #141d32;
+        height: 50px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .nav-left {
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+
+      .nav-right ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-right li {
+        margin-left: 24px;
+        font-weight: 500;
+        transition: color 0.2s ease;
+        cursor: pointer;
+      }
+
+      .nav-right li a {
+        color: #f8fafc;
+        text-decoration: none;
+      }
+
+      .nav-right li:hover a {
+        color: #38bdf8;
+      }
+
+      /* GENERAL SECTION STYLING */
+      section {
+        padding: 60px 40px;
+      }
+
+      .section-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #38bdf8;
+        display: inline-block;
+        padding-bottom: 4px;
+      }
+
+      /* ME SECTION */
+      .FirstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .FirstSection div {
+        max-width: 40%;
+      }
+
+      .leftSection h1 {
+        font-size: 2.5rem;
+        margin: 0 0 10px;
+      }
+
+      .leftSection h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+
+      .rightSection img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
+      }
+
+      /* OPTION SECTION */
+      .projects,
+      .college,
+      .skills,
+      .contact {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .project-item,
+      .college-item,
+      .skill-item,
+      .contact-item {
+        margin-bottom: 20px;
+      }
+
+      .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .skill-item {
+        background-color: #1e293b;
+        padding: 10px 16px;
+        border-radius: 8px;
+      }
+
+      a {
+        color: #38bdf8;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-left">Mayank's Portfolio</div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#college">College</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="FirstSection" id="home" data-aos="fade-up">
+        <div class="leftSection">
+          <h1>Hey! I'm Mayank 👋</h1>
+          <h2>I mess around with code and sometimes things work 😄</h2>
+        </div>
+        <div class="rightSection">
+          <img src="bruhBetterImprovised.png" alt="me probably" />
+        </div>
+      </section>
+
+      <section class="projects" id="projects" data-aos="fade-up">
+        <h2 class="section-title">Things I've Built 🛠️</h2>
+        <div class="project-item">
+          <strong>🌦️ Weather App</strong> - A little app that shows live weather
+          based on the city you type. It uses an API and surprisingly works!
+        </div>
+        <div class="project-item">
+          <strong>🌐 This Portfolio</strong> - You're looking at it! Made with
+          love, coffee, and a lot of Googling.
+        </div>
+      </section>
+
+      <section class="college" id="college" data-aos="fade-up">
+        <h2 class="section-title">College Stuff 🎓</h2>
+        <div class="college-item">
+          I'm currently studying Computer Engineering at
+          <strong>St. John College of Engineering and Management</strong>,
+          Palghar.
+          <br />
+          It's been cool so far — learning new things, surviving exams, and
+          lowkey loving the grind.
+        </div>
+      </section>
+
+      <section class="skills" id="skills" data-aos="fade-up">
+        <h2 class="section-title">Things I'm learning 🔧</h2>
+        <div class="skills-list">
+          <div class="skill-item">HTML (div life chose me)</div>
+          <div class="skill-item">CSS (thank you, Flexbox)</div>
+          <div class="skill-item">JavaScript (getting there)</div>
+          <div class="skill-item">C (because college)</div>
+          <div class="skill-item">JAVA (mark zuckerburg ahh language)</div>
+          <div class="skill-item">Git & GitHub (push & pray)</div>
+          <div class="skill-item">C++(Pointers tak sab thik tha)</div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" data-aos="fade-up">
+        <h2 class="section-title">Reach Out! 📫</h2>
+        <div class="contact-item">
+          Got a cool project? Want to talk code, memes, or food? Hit me up!
+          <br /><br />
+          📧 Email:
+          <a href="mailto:mayankkamleshtiwari1112@gmail.com" target="_blank"
+            >mayankkamleshtiwari1112@gmail.com</a
+          ><br />
+          💼 LinkedIn:
+          <a href="https://www.linkedin.com/in/maharshimayank" target="_blank"
+            >www.linkedin.com/in/maharshimayank</a
+          ><br />
+          💻 GitHub:
+          <a href="https://github.com/MayankTiwari1312" target="_blank"
+            >https://github.com/MayankTiwari1312</a
+          ><br />
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            target="_blank"
+            class="resume-btn"
+          >
+            📄 Download Resume
+          </a>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
